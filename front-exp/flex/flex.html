@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex_axis_global.css">
+    <link rel="stylesheet" href="flex_global.css">
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction 
+             아이템의 배치 방향을 설정합니다. 
+             
+             row : 왼쪽에서 오른쪽으로 배치(기본값)
+             row-reverse : 오른쪽에서 왼쪽으로 행으로 배치 // 오른쪽으로 붙음
+             column : 위에서 아래로 열로 배치
+             column-reverse : 아래에서 위로 열로 배치
+
+             justify-content : 주축(가로축)에서 어떻게 정렬할것인지 정하는것
+             flex-start : 왼쪽 정렬 기본값
+             flex-end : 오른쪽 정렬
+             center : 가운데 정렬
+             space-between : 첫번째와 마지막아이템을 양쪽 끝에 붙이고 나머지 아이템들은 n분의 일
+             space-arount : 모든 아이템의 사이와 양끝에 동일한 간격 부여
+             */
+             flex-direction: row;
+             /* justify-content: center; */
+             /* justify-content: space-between; */
+             justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item_1"></div>
+        <div class="box" id="item_2"></div>
+        <div class="box" id="item_3"></div>
+        <div class="box" id="item_4"></div>
+        <div class="box" id="item_5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:if="${username != null}">[[ ${username} ]], welcome!</h1>
+    <h1 th:unless="${username != null}">로그인해</h1>
+
+</body>
+</html>

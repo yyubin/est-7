@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>페이지 4</title>
+</head>
+<body>
+<div>
+  <h3>번호변경</h3>
+  <span>전화번호</span>
+  <div style="margin-top: 5px">
+    <span>종류</span>
+    <select name="sort">
+      <option th:value="${cellPhone}" selected>휴대전화</option>
+      <option value="general">일반전화</option>
+    </select>
+  </div>
+  <div style="margin-top: 5px">
+    <input
+            style="width: 50px"
+            type="text"
+            th:value="${countryCallingCode}"
+            disabled
+    >
+    <input type="text">
+  </div>
+  <div style="margin-top: 10px">
+    <button>신청</button>
+  </div>
+</div>
+</body>
+</html>

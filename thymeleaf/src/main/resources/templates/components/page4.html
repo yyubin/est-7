@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{reset/basic-layout}"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="contents">
+    <div class="wrapper" th:object="${post}">
+        <h2 th:text="*{title}">제목란</h2>
+        <hr />
+        <h4> [[ *{id} ]] 번 게시글,  작성자 : [[*{author}]] </h4>
+        <div class="contents">
+            <p th:text="*{contents}"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

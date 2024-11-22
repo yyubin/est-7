@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link 태그</title>
+</head>
+<body>
+    <h2> 다른 사이트로의 링크 </h2>
+    <a 
+        href="https://google.com" 
+        target="_blank"
+        title="좋은 검색 엔진을 제공하는 사이트"
+    >
+        here
+    </a>
+    <br>
+    <a href="https://naver.com" target="_blank">
+        naver
+    </a>
+    <br>
+    <a href="https://github.com" target="_blank">
+        github
+    </a>
+    <br>
+    <a href="./lib/hello.txt" download>파일 다운로드</a>
+
+    <div>
+        <h2> 동일한 페이지 내부의 특정 요소로 링크하는 것도 가능합니다 </h2>
+        <h4> 목차 </h4>
+        <ul>
+            <li><a href="#section1">섹션 1로 이동</a></li>
+            <li><a href="#section2">섹션 2로 이동</a></li>
+            <li><a href="#section3">섹션 3로 이동</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <h2 id="section1">섹션 1</h2>
+        <p>섹션 1의 내용</p>
+    </section>
+    <section>
+        <h2 id="section2">섹션 2</h2>
+        <p>섹션 2의 내용</p>
+    </section>
+    <section>
+        <h2 id="section3">섹션 3</h2>
+        <p>섹션 3의 내용</p>
+    </section>
+
+    <div>
+        <h2>
+            같은 프로젝트 내부에 있는 파일로 이동하는 것도 가능합니다.
+        </h2>
+
+        <div>
+            <ol>
+                <li><a href="./pages/page1.html">p1</a></li>
+                <li><a href="./pages/page2.html">p2</a></li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>

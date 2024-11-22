@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-grow {
+            flex-grow: 1;
+        }
+
+        .mx-4 {
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        #banner-container {
+            font-size: 1.3rem;
+            padding: 22.5px;
+            font-weight: bold;
+        }
+
+        #menu-container {
+            font-size: 1.3rem;
+        
+        }
+        
+        #menu-container > ul > li > a {
+            display: block;
+            padding: 22.5px;
+        }
+        
+        #menu-container ul > li:hover > a {
+            background-color: black;
+            color: white;
+        }
+
+        #menu-container > ul ul > li > a {
+            display: block;
+            padding: 16.50px;
+        }
+
+        #menu-container > ul ul {
+            position: absolute;
+            display: none;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        #menu-container > ul > li:hover > ul {
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <div id="banner-container">
+            <a href="">
+                <span>BANNER</span>
+            </a>
+        </div>
+        <div class="flex-grow"></div>
+        <div id="menu-container">
+            <ul class="flex">
+                <li class="mx-4"><a href="#"><span>ITEM</span></a></li>
+
+                <li class="mx-4"><a href="#"><span>ITEM</span></a></li>
+
+                <li class="mx-4">
+                    <a href="#">
+                        <span>ITEM</span>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span>ITEM7</span></a></li>
+                        <li><a href="#"><span>ITEM8</span></a></li>
+                        <li><a href="#"><span>ITEM9</span></a></li>
+                    </ul>    
+                </li>
+
+                <li class="mx-4"><a href="#"><span>ITEM</span></a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX TEST 4</title>
+    <link rel="stylesheet" href="flex_axis_global.css">
+    <link rel="stylesheet" href="flex_global.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            border: .3px dashed gray;
+        }
+
+        /* flex-grow 
+        아이템이 남은 공간을 얼마나 차지할 지를 결정, 기본값은 0 */
+        .flex-grow-1 {
+            flex-grow: 1;
+        }
+
+        .flex-grow-2 {
+            flex-grow: 2;
+        }
+
+        /* flex-basis
+        width랑 유사하지만 flex-grow와 함께 사용될 때 더 정확히 동작 */
+
+        .flex-basis {
+            flex-basis: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="item_1" class="box flex-basis"></div>
+        <div id="item_2" class="box flex-grow-1"></div>
+        <div id="item_3" class="box flex-grow-2"></div>
+    </div>
+</body>
+</html>

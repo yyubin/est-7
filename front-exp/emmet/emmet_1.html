@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        HTML 태그 Emmet
+    -->
+
+    <!-- 
+    div>ul>li
+    -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- 
+    형제 요소
+    -->
+    <!-- 
+    div>h2+span
+    -->
+    <div>
+        <h2></h2>
+        <span></span>
+    </div>
+
+    <!-- 마지막 만들고 있는 요소 기준을로 한칸 올라감 ^  -->
+     <div>
+        <ul>
+            <li></li>
+        </ul>
+        <h2></h2>
+        <span></span>
+     </div>
+
+     <div>
+        <ul>
+            <li></li>
+        </ul>
+        <ol>
+            <li></li>
+        </ol>
+     </div>
+
+     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+
+
+     <!-- 그룹 -->
+
+     <div>
+        <nav>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </nav>
+        <div></div>
+     </div>
+
+     <!-- div>nav>ol>li*3^^div -->
+     <!-- div>(nav>ol>li*3div)+div -->
+
+
+     <!-- 
+        속성 Emmet 
+        class   .
+        id   #
+     -->
+
+     <!-- . -->
+    <div class=""></div>
+
+    <!-- .mx-10 -->
+    <div class="mx-10"></div>
+
+    <!-- .mx-10.my-10 -->
+    <div class="mx-10 my-10"></div>
+
+    <!-- h2.text-lg -->
+    <h2 class="text-lg"></h2>
+    
+    <!-- # -->
+    <!-- id는 2개 안됨 고유해야함 -->
+
+    <a href="https://gooogle.com"></a>
+    
+    <!-- 
+    ol>li#item$*3
+    -->
+    <ol>
+        <li id="item1"></li>
+        <li id="item2"></li>
+        <li id="item3"></li>
+    </ol>
+
+    <!-- 
+    ol>li#item$@10*5
+    -->
+
+    <ol>
+        <li id="item10"></li>
+        <li id="item11"></li>
+        <li id="item12"></li>
+        <li id="item13"></li>
+        <li id="item14"></li>
+    </ol>
+
+    <!-- 
+    .box{Hello World}
+    -->
+    <div class="box">Hello World!</div>
+
+
+    <div class="container">
+        <ol>
+            <li class="item"><a href="#">아이템 10</a></li>
+            <li class="item"><a href="#">아이템 11</a></li>
+            <li class="item"><a href="#">아이템 12</a></li>
+            <li class="item"><a href="#">아이템 13</a></li>
+            <li class="item"><a href="#">아이템 14</a></li>
+        </ol>
+    </div>
+
+    <div class="list-continer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+
+</body>
+</html>

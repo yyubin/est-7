@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:with="name = '구구단'">
+        <h2 th:text="${name}"></h2>
+        <h3>[[ ${target} ]] 단</h3>
+        <div>
+            <th:block th:each="idx: ${#numbers.sequence(1,9)}">
+                <p> [[ ${target} ]] x [[ ${idx} ]] = [[ ${target} * ${idx} ]] </p>
+            </th:block>
+        </div>
+    </div>
+</body>
+</html>
